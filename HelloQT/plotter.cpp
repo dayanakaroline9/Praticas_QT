@@ -28,5 +28,7 @@ void Plotter::paintEvent(QPaintEvent *event)
     painter.setPen(pen);
     //desenha o retangulo abrangendo toda a extensão
     //componente
-    painter.drawRect(0,0,width(),height());
+    painter.drawRect(0,0,width()/3,height()/3);
+    painter.drawRect(width()/3,0,width()/3,height()/3);
+    painter.drawRect(width()/3,0,width()/3,height()/3);
 }
